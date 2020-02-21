@@ -2,8 +2,50 @@
 <html>
   <head>
     <title>Getting Started</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #rete {
+        height: 100% !important;
+        border: 1px dotted red;
+      }
+
+      #modules {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 5;
+      }
+
+      .module {
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .module:hover {
+        color: #a167e7;
+      }
+
+      .node .socket.number {
+        background: #96b38a;
+      }
+
+      .node .socket.float {
+        background: red;
+      }
+
+      .node {
+        background: gray;
+      }
+    </style>
   </head>
   <body>
-    <script src="dist/main.js"></script>
+    <div id="rete"></div>
+    <script src="bundle.js"></script>
   </body>
 </html>
